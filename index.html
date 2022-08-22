@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<style>
+        h1{
+        color: #101010;
+         }
+    body {
+        font-family: 'Source Serif Pro', serif;
+        background-image: linear-gradient(to top, #ff00d4, #00ddff);
+        background-attachment: fixed; 
+    }
+
+    .skeleton {
+        text-align: center;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    input {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #ddffff;
+        border: 5px solid black;
+        border-radius: 15px;
+        width: 379px;
+        height: 35px;
+        padding: 2px;
+    }
+
+    button {
+        width: 93px;
+        font-size: 29px;
+        height: 66px;
+        background-color: #def1fb;
+        border-radius: 20px;
+    }
+
+    .yellowbutton {
+        background-color: rgb(255 255 27 / 94%);
+    }
+
+    .redbutton {
+        background-color: #ff3e7f;
+    }
+
+    #bt1 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt1:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt2 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt2:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt3 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt3:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt4 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt4:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt5 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt5:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt6 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt6:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt7 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt7:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt8 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt8:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt9 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt9:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt10 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt10:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt11 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt11:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt12 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt12:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt13 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt13:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt14 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt14:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt15 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt15:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt16 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt16:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt17 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt17:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt18 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt18:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt19 {
+        display: inline-block;
+        width: 396px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    #bt19:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+    }
+
+    #bt20 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt20:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    #bt21 {
+        transition: all 1s ease-in-out;
+    }
+
+    #bt21:hover {
+        background-color: black;
+        color: white;
+        box-shadow: -2px -2px 2px rgb(8, 0, 255);
+        cursor: pointer;
+    }
+
+    .calculator {
+        display: inline-block;
+        box-shadow: -5px -5px 10px rgb(8, 0, 255);
+        background-color: #9be5ff;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    @media only screen and (max-width:460px){
+    .calculator {
+        display: inline-block;
+        box-shadow: -5px -5px 10px rgb(8, 0, 255);
+        background-color: #9be5ff;
+        padding: 10px;
+        border-radius: 30px;
+        width: 340px;
+        height: 470px;
+    }
+    button {
+        width: 80px;
+        font-size: 29px;
+        height: 56px;
+        background-color: #def1fb;
+        border-radius: 20px;
+    }
+    
+    #bt19 {
+        display: inline-block;
+        width: 330px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+    }
+    input {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #ddffff;
+        border: 5px solid black;
+        border-radius: 15px;
+        width: 316px;
+        height: 35px;
+        padding: 2px;
+    }
+ 
+}
+
+
+    
+</style>
+
+<body>
+
+
+    <div class="skeleton">
+        <h1>Basic Calculator</h1>
+        <div class="calculator">
+            <input type="text" name="screen" id="screen" placeholder="Enter Values">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><button class="yellowbutton" id="bt1">(</button></td>
+                        <td><button class="yellowbutton" id="bt2">)</button></td>
+                        <td><button class="yellowbutton" id="bt3">C</button></td>
+                        <td><button class="redbutton" id="bt4">%</button></td>
+
+                    </tr>
+                    <tr>
+                        <td><button id="bt5">7</button></td>
+                        <td><button id="bt6">8</button></td>
+                        <td><button id="bt7">9</button></td>
+                        <td><button class="redbutton" id="bt8">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="bt9">4</button></td>
+                        <td><button id="bt10">5</button></td>
+                        <td><button id="bt11">6</button></td>
+                        <td><button class="redbutton" id="bt12">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="bt13">1</button></td>
+                        <td><button id="bt14">2</button></td>
+                        <td><button id="bt15">3</button></td>
+                        <td><button class="redbutton" id="bt16">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="bt17">0</button></td>
+                        <td><button class="yellowbutton" id="bt18">.</button></td>
+                        <td><button class="yellowbutton" id="bt21">&larr;</button></td>
+                        <td><button class="redbutton" id="bt20">+</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"> <button class="redbutton" id="bt19">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
